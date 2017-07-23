@@ -16,7 +16,7 @@ import java.util.Map;
 public class IsCommand implements Command {
 
 	@Argument
-	protected Player player;
+	protected Player target;
 
 	@Override
 	public void run(Context context) {
@@ -25,7 +25,7 @@ public class IsCommand implements Command {
 
 	protected Map<String, String> details() {
 		Map<String, String> details = new HashMap<>();
-		details.put("target", player.getName());
+		details.put("target", target.getName());
 		return details;
 	}
 
