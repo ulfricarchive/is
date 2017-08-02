@@ -13,7 +13,6 @@
 	<groupId>com.ulfric.is</groupId>
 	<artifactId>is</artifactId>
 	<version>1.0.0</version>
-	<name>Is</name>
 
 	<dependencies>
 		<dependency>
