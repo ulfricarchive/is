@@ -5,7 +5,7 @@ import com.ulfric.plugin.Plugin;
 public class Is extends Plugin {
 
 	public Is() {
-		install(IsContainer.class);
+		install(IsCommand.class);
 	}
 
 }
