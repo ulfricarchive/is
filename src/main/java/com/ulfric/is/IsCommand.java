@@ -7,9 +7,7 @@ import com.ulfric.andrew.Context;
 import com.ulfric.andrew.Permission;
 import com.ulfric.andrew.argument.Argument;
 import com.ulfric.commons.naming.Name;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.ulfric.i18n.content.Details;
 
 @Name("is")
 @Permission("is.use")
@@ -23,9 +21,9 @@ public class IsCommand implements Command {
 		// TODO help menu
 	}
 
-	protected Map<String, String> details() {
-		Map<String, String> details = new HashMap<>();
-		details.put("target", target.getName());
+	protected Details details() {
+		Details details = new Details();
+		details.add("target", target.getName());
 		return details;
 	}
 
